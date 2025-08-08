@@ -161,15 +161,15 @@ export default function ReadTextPage() {
 * **秤**: 準確的重量對烘焙很重要。`;
 
   return (
-    <div className="flex justify-center min-h-screen bg-gray-50 dark:bg-gray-900 p-4 sm:p-8">
+    <div className="flex-1 justify-center min-h-screen bg-gray-50 dark:bg-gray-900 p-4 sm:p-8">
+      <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-gray-100 mb-8 text-center sm:text-left">
+        Read Text
+      </h1>
       <div className="w-full max-w-6xl flex flex-col sm:flex-row gap-8 mt-10">
         {/* Main Content Area */}
         <main className="w-full flex-1">
-          <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-gray-100 mb-8 text-center sm:text-left">
-            Read Text
-          </h1>
           <article
-            className="prose dark:prose-invert w-full max-w-none h-95 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-6 overflow-y-auto shadow-md"
+            className="prose dark:prose-invert w-full max-w-none h-auto bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-6 overflow-y-auto shadow-md"
           >
             <ReactMarkdown
               rehypePlugins={[rehypeHighlight]}
