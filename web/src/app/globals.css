@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities; */
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
 
 :root {
@@ -91,14 +92,3 @@ body {
 .hljs-link {
   text-decoration: underline;
 }
-
-/* Custom rule to fix span rendering inside prose headings */
-.prose h1 > span,
-.prose h2 > span,
-.prose h3 > span,
-.prose h4 > span,
-.prose h5 > span,
-.prose h6 > span {
-    display: contents;
-}
-

@@ -63,6 +63,7 @@ export default function ReadTextPage() {
     startIndex: number,
     pIndex: number
   ) => {
+    console.log("handleMouseEnter: word=%s", word);
     setHoveredInfo({ word, startIndex, pIndex });
   };
 
