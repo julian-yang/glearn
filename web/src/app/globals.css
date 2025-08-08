@@ -1,0 +1,104 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+@import "tailwindcss";
+
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* tomorrow-night theme for highlight.js */
+.hljs {
+  background: #1d1f21;
+  color: #c5c8c6;
+}
+
+.hljs-comment,
+.hljs-meta {
+  color: #969896;
+}
+
+.hljs-string,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-strong,
+.hljs-emphasis,
+.hljs-quote {
+  color: #b5bd68;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-type {
+  color: #b294bb;
+}
+
+.hljs-literal,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-attribute {
+  color: #de935f;
+}
+
+.hljs-section,
+.hljs-name {
+  color: #f0c674;
+}
+
+.hljs-tag {
+  color: #81a2be;
+}
+
+.hljs-title,
+.hljs-attr,
+.hljs-selector-id,
+.-selector-class,
+.hljs-selector-attr,
+.hljs-selector-pseudo {
+  color: #c5c8c6;
+}
+
+.hljs-addition {
+  background-color: rgba(133, 153, 0, 0.2);
+}
+
+.hljs-deletion {
+  background-color: rgba(220, 50, 47, 0.2);
+}
+
+.hljs-link {
+  text-decoration: underline;
+}
+
+/* Custom rule to fix span rendering inside prose headings */
+.prose h1 > span,
+.prose h2 > span,
+.prose h3 > span,
+.prose h4 > span,
+.prose h5 > span,
+.prose h6 > span {
+    display: contents;
+}
+
